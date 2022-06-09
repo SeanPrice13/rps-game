@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  user-select: none;
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    #mid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    #player-section,
+    #CPU-section,
+    #win,
+    #lose,
+    #tie {
+      height: 40vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+#reload {
+  position: absolute;
+  z-index: 100;
+  width: fit-content;
+  background-color: black;
+  top: 1.5em;
+  right: 1.5em;
+  border: none;
+  img {
+    width: 5em;
+    height: 5em;
+    &:hover {
+      filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg)
+        brightness(107%) contrast(143%);
+    }
+  }
+}
+
+//DEFAULT HAND/BUTTON COLOR & SIZE
+img {
+  display: inline;
+  width: 10em;
+  height: 10em;
+  cursor: pointer;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg)
+    brightness(102%) contrast(102%);
+}
+#player-section img:hover {
+  filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg)
+    brightness(107%) contrast(143%);
+}
+@media only screen and (max-width: 768px) {
+  img {
+    width: 5em;
+    height: 5em;
+  }
+  #reload img {
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
+
+//WIN COLOR
+#win img {
+  filter: invert(58%) sepia(98%) saturate(2144%) hue-rotate(78deg)
+    brightness(114%) contrast(129%);
+}
+
+//LOSE COLOR
+#lose img {
+  filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg)
+    brightness(97%) contrast(111%);
+}
+
+//TIE COLOR
+#tie img {
+  filter: invert(81%) sepia(93%) saturate(2808%) hue-rotate(358deg)
+    brightness(104%) contrast(108%);
+}

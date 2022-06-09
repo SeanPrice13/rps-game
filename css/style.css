@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+* body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+}
+
+* body #mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+}
+
+* body #mid p {
+  font-size: 1.5rem;
+}
+
+* body #player-section,
+* body #CPU-section,
+* body #win,
+* body #lose,
+* body #tie {
+  height: 40vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reload {
+  position: absolute;
+  z-index: 100;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: black;
+  top: 1.5em;
+  right: 1.5em;
+  border: none;
+}
+
+#reload img {
+  width: 5em;
+  height: 5em;
+}
+
+#reload img:hover {
+  -webkit-filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg) brightness(107%) contrast(143%);
+          filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg) brightness(107%) contrast(143%);
+}
+
+img {
+  display: inline;
+  width: 10em;
+  height: 10em;
+  cursor: pointer;
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
+}
+
+#player-section img:hover {
+  -webkit-filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg) brightness(107%) contrast(143%);
+          filter: invert(8%) sepia(94%) saturate(7445%) hue-rotate(248deg) brightness(107%) contrast(143%);
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 5em;
+    height: 5em;
+  }
+  #reload img {
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
+
+#win img {
+  -webkit-filter: invert(58%) sepia(98%) saturate(2144%) hue-rotate(78deg) brightness(114%) contrast(129%);
+          filter: invert(58%) sepia(98%) saturate(2144%) hue-rotate(78deg) brightness(114%) contrast(129%);
+}
+
+#lose img {
+  -webkit-filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg) brightness(97%) contrast(111%);
+          filter: invert(12%) sepia(99%) saturate(7025%) hue-rotate(360deg) brightness(97%) contrast(111%);
+}
+
+#tie img {
+  -webkit-filter: invert(81%) sepia(93%) saturate(2808%) hue-rotate(358deg) brightness(104%) contrast(108%);
+          filter: invert(81%) sepia(93%) saturate(2808%) hue-rotate(358deg) brightness(104%) contrast(108%);
+}
+/*# sourceMappingURL=style.css.map */
